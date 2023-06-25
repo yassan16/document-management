@@ -14,3 +14,6 @@ Xcodeでの.gitignoreについてまとめている。
 * [【Xcode/Swift】Xcodeでの.gitignoreの設定方法、自分が使っている.gitignoreの内容を解説](https://ios-docs.dev/xcode-gitignore/)
 * [Xcodeにて.gitignoreが反映されない時の解決方法](https://qiita.com/chitomo12/items/a44592ddfc833f8dabf7)
 * [XcodeでGitを操作してみた](https://dev.classmethod.jp/articles/tried-git-with-xcode/)
+* [[GitHub]Swift.gitignore](https://github.com/github/gitignore/blob/main/Swift.gitignore)
+* [【Xcode/Git】.gitignoreファイルの設定方法！役割や反映されない解決法とは？](https://tech.amefure.com/swift-git-gitignore)
+* [プロジェクト新規作成をしたらはじめにやってること](https://zenn.dev/nkysyuichi/articles/7694975d156dcc)
