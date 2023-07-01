@@ -12,18 +12,18 @@ print(a) // Swift
 a = nil
 // 実行結果
 // 'nil' cannot be assigned to type 'String'
-
 ```
 
 ## Optional型の宣言
-変数の後ろに`?`を記述する。
+変数の後ろに`?`を記述する。  
+Optional型では、変数の宣言と同時に自動的にnilが代入される
 
 ```Swift
-// Optional型では、変数の宣言と同時に自動的にnilが代入される
 var b: String? // nil
+var c: String? = "初期化" // 初期化
 ```
 
-## Optinal型のアンラップ
+## Optional型のアンラップ
 Optional型は値を保持していない可能性があるため、非オプショナル型の変数と同じように扱う事ができない。  
 Optional型の値に対して操作を行う場合は、一度値を取り出す必要がある。 (アンラップという)
 
@@ -69,6 +69,65 @@ func textStr() -> String {
 print(textStr()) // nilやで
 ```
 
+## ??演算子
+??演算子は、値が存在しない場合にデフォルトの値を代入できる。  
+値がある場合は、デフォルト値はスキップされる。
+
+```Swift
+var int3: Int?
+var int4 = int3 ?? 3  // 3
+var int5 = int4 ?? 99 // 3
+```
+
+## !演算子で強制アンラップ
+!演算子は、強制的にOptional型の値を取り出せる。  
+強制的に値を取り出すため、もし値がないときは実行時にエラーが発生する。  
+強制アンラップは、プログラムの実行時にエラーが発生するので、意図しないバグを招く可能性がある。
+
+```Swift
+var int6: Int? = 1
+var int7 = int6! + 1 // 2
+```
+エラー
+```Swift
+var int8: Int?
+var int9 = int8! + 1
+// Fatal error: Unexpectedly found nil while unwrapping an Optional value
+```
+
+## 暗黙的にアンラップ
+宣言時に、 `! `をつけることでアンラップを明示的にしなくても自動的に値を取り出すことができる。
+
+エラー
+```Swift
+var int10: Int!
+var int11 = int10 + 10 // 20
+// Fatal error: Unexpectedly found nil while unwrapping an Optional value
+```
+
+## Optional Chaining
+Optional Chainingを使用すると、アンラップせずにアクセスすることができる。  
+もし、値がない場合は nilを返す。
+
+```Swift
+var int12: Int? = 10
+print(int12?.distance(to: 1)) // Optional(-9) // 値がない場合はnil
+
+if let int13 = int12?.distance(to: 1) {
+  print(int13) // -9
+} else {
+　　　　print("値がありません")
+}
+```
+
+## mapメソッド
+mapメソッドを使うと、アンラップをせずに値の取得をすることができる。  
+値が存在すれば実行し、値が存在しなければ何も実行されない。
+
+```Swift
+var int14: Int? = 10
+var int15 = int14.map { val in val * 10 } // Optional(100)
+```
 
 ## 参考サイト
 * [Swiftの始め方](https://swift.codelly.dev/guide/%E5%9F%BA%E6%9C%AC%E3%81%AE%E5%9E%8B/Optional%E5%9E%8B.html)
