@@ -34,6 +34,13 @@ var result = int1 + int2
 // force-unwrap using '!' to abort execution if the optional value contains 'nil'
 ```
 
+アンラップするには以下の方法がある。(非オプショナル型)
+* Optional Binding
+* ??演算子
+* !演算子で強制アンラップ
+
+それぞれ以降で解説する。
+
 ## Optional Binding
 Optional Bindingは、条件分岐や繰り返しの条件で使用することができる。  
 if-let文のフォーマットで記述し、Optional型の値が存在するときは、true を返し、nilのときは false を返す。  
