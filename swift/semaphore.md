@@ -18,3 +18,4 @@ valueがインクリメントされる(1足される)。処理を進める合図
 
 ## 参考サイト
 * [[Swift] 複雑な非同期処理が作り出すコールバック地獄とネスト地獄を解消したい! セマフォを使ったシンプルなリファクト方法を試してみた](https://dev.classmethod.jp/articles/sync-process-with-dispatch-semaphore/)
+* [DispatchSemaphoreで非同期処理の完了を待つ](https://scior.hatenablog.com/entry/2019/09/11/231626)
