@@ -11,7 +11,7 @@ Sub getRowText()
 
   startCol = 1
   endCol = 3
-  csvFilePath = "E:\programming\020_VBA\sample.csv"
+  csvFilePath = "出力先のファイルパス"
 
   For rowCount = startCol To endCol
     result = result & """" & Cells(1, rowCount).Value & """"
