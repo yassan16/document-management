@@ -1,34 +1,66 @@
 # CSVデータの作成
 
+
+## Excelの画面
+
+|  | A | B | C |
+| -- | -- |-- |-- |
+| 1 | 0 | 1 | 2 |
+| 2 | 3 | 4 | 5 |
+
+## 出力結果
+"0","1","2"  
+"3","4","5"
+
+
 ## サンプルコード
 
 ```vba
 Sub getRowText()
   Dim result As String
+
   Dim startCol As Integer
   Dim endCol As Integer
+  Dim startRow As Integer
+  Dim endRow As Integer
+
   Dim csvFilePath As String
 
+  '列
   startCol = 1
   endCol = 3
-  csvFilePath = "出力先のファイルパス"
+  '行
+  startRow = 1
+  endRow = 2
+  '出力先
+  csvFilePath = "出力先のフォルダパス\sample.csv"
 
-  For rowCount = startCol To endCol
-    result = result & """" & Cells(1, rowCount).Value & """"
+  '1行ごと
+  For rowCount = startRow To endRow
+    '1列ごと
+    For colCount = startCol To endCol
+      result = result & """" & Cells(rowCount, colCount).Value & """"
 
-    If rowCount = endCol Then
-      GoTo Continue
-    End If
+      '最終列はカンマを付けずに改行
+      If colCount = endCol Then
+        result = result & vbCrLf '改行コード
+        GoTo Continue
+      End If
     
-    result = result & ","
+      result = result & ","
         
 Continue:
+    Next colCount
   Next rowCount
+
+  '作成した値を確認
   Debug.Print result
 
+  'CSV出力
   Open csvFilePath For Append As #1
     Print #1, result
   Close #1
+
 End Sub
 
 ```
