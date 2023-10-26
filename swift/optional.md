@@ -66,7 +66,8 @@ if let s1 = str1 {
 
 ### guard let
 guard文は、条件が成立しないときに実行される構文。  
-変数がnilのときはfalse判定になり、returnする。値がある場合は、そのまま処理が続行される。
+変数がnilのときはfalse判定になり、returnする。値がある場合は、そのまま処理が続行される。  
+関数内でのみ使用可能。
 
 ```Swift
 var str2: String?
