@@ -16,8 +16,8 @@
 ## サンプルコード
 
 ```vba
-Sub getRowText()
-  Dim result As String
+Sub getCsvFile()
+  Dim csvData As String
 
   Dim startCol As Integer
   Dim endCol As Integer
@@ -33,34 +33,40 @@ Sub getRowText()
   startRow = 1
   endRow = 2
   '出力先
-  csvFilePath = "出力先のフォルダパス\sample.csv"
+  csvFilePath = "出力先フォルダ\sample.csv"
 
   '1行ごと
   For rowCount = startRow To endRow
     '1列ごと
     For colCount = startCol To endCol
-      result = result & """" & Cells(rowCount, colCount).Value & """"
+      csvData = csvData & """" & Cells(rowCount, colCount).Value & """"
 
       '最終列はカンマを付けずに改行
       If colCount = endCol Then
-        result = result & vbCrLf '改行コード
+        csvData = csvData & vbCrLf
         GoTo Continue
       End If
     
-      result = result & ","
+      csvData = csvData & ","
         
 Continue:
     Next colCount
   Next rowCount
 
   '作成した値を確認
-  Debug.Print result
+  Debug.Print csvData
 
   'CSV出力
-  Open csvFilePath For Append As #1
-    Print #1, result
-  Close #1
+  Call outputCsv(csvFilePath, csvData)
 
 End Sub
 
+
+'出力先、CSVデータ
+Sub outputCsv(csvFilePath, csvData)
+  'ファイルに書き込む
+  Open csvFilePath For Append As #1
+    Print #1, csvData
+  Close #1
+End Sub
 ```
