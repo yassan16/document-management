@@ -13,7 +13,7 @@ public class Main {
 
     public static void main(String[] args) {
         // 出力先のパス
-        String outputFolder = "E:\\programming\\010_CSV\\sample\\";
+        String outputFolder = "E:\\出力先フォルダ\\sample\\";
         String outputFile = "sample.txt";
 
         // フォルダ作成
