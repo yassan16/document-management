@@ -17,4 +17,24 @@ void main() {
   // 空ではない
   final bool str6 = str.isNotEmpty;
   print(str6); // true
+  // 演算子
+  // +
+  const String str7 = str + "" + str;
+  print(str7); // "Hello World Hello World"
+  // *
+  final String str8 = str*3;
+  print(str8); // "Hello WorldHello WorldHelloWorld"
+  // ==
+  final bool str9 = (str == "Hello World");
+  print(str9); // true
+  // []
+  final String str10 = str[0];
+  print(str10); // H
+  // $
+  const String str11 = "$str $str";
+  print(str11); // "Hello World Hello World"
+  // join
+  final List<String> strs = ["Hello","World"];
+  final String str12 = strs.join();
+  print(str12); // HelloWorld
 }
