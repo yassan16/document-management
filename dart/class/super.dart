@@ -6,6 +6,7 @@ class BaseClass {
   void helloWorld() => print("Hello World!");
 }
 class SubClass extends BaseClass {
+  // super()と記述することで、継承元クラスのコンストラクタを使用できる
   SubClass(int value) 
   : super(value); // BaseClassのコンストラクタ;
 }
