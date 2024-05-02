@@ -7,6 +7,7 @@ class Person {
   late int id;
  
   // 初期化子
+  // インスタンスが生成されるたびに実行される処理のこと
   Person(this.name,this.age) {
     id = counter + 1;
     counter++;
