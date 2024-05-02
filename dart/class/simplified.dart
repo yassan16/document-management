@@ -1,3 +1,4 @@
+// 簡略化されたsetter, getterの使用例
 class Person {
   String _name;
   int _age;
