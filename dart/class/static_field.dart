@@ -8,6 +8,7 @@ class Person {
  
   // 初期化子
   // インスタンスが生成されるたびに実行される処理のこと
+  // 初期化子で値が入るフィールドは、lateで宣言する
   Person(this.name,this.age) {
     id = counter + 1;
     counter++;
