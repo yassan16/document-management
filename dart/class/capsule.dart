@@ -1,3 +1,6 @@
+//　カプセル化　の資料例
+// setter, getter　（省略前）
+
 class Person {
   // 「_」を記載することで、private変数として使用できる
   String _name;
