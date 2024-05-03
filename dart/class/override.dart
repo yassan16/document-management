@@ -13,6 +13,7 @@ class SubClass extends BaseClass {
   @override
   void helloWorld() {
     print("こんにちは、世界"); // 出力結果: こんにちは、世界
+    // 親クラスのメソッドを使用する
     super.helloWorld(); // 出力結果: Hello,World
   }
 }
