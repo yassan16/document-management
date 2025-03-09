@@ -101,6 +101,8 @@ sudoモデリングでは、4つのモデル図を作成する。
 #### 日本語名の対訳としての英語名
 * ここで英語名を決めることで、以降のエンドポイント名、テーブル名、クラス名などで使用される英語の表記揺れを防げる
 
-
-
-
+## 参考サイト
+* [さようなら軽量DDD。10分でわかるドメインモデリング - ドメイン駆動設計](https://www.youtube.com/watch?v=HgtCKlOzRiQ&list=PLXMIJq1G-_66F9woQpidJfe4HHCFxdXaA&index=1)
+* [Flutterのアーキテクチャ、プロジェクト構成、フォルダ構成はどうすればいいのか](https://qiita.com/MLLB/items/95617322a7d984b7e402)
+* [バックエンドエンジニアたちが複数のFlutterアプリを並行開発していく中で見つけたベストプラクティス](https://blog.kinto-technologies.com/posts/2023-12-10-flutter-architecture/)
+* [Flutter App Architecture with Riverpod: An Introduction](https://codewithandrea.com/articles/flutter-app-architecture-riverpod-introduction/)
