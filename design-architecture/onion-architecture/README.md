@@ -146,3 +146,4 @@ class UserPage extends ConsumerWidget {
 
 ## 参考サイト
 * [Flutter Project Structure: Feature-first or Layer-first?](https://codewithandrea.com/articles/flutter-project-structure/)
+* [クリーンアーキテクチャはおすすめしません。10分でわかるDDDのアーキテクチャ - ドメイン駆動設計](https://www.youtube.com/watch?v=80NeuPXs2J0&list=PLXMIJq1G-_66F9woQpidJfe4HHCFxdXaA&index=5)
