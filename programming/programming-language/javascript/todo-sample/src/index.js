@@ -1,4 +1,4 @@
-import "./styles.css";
+import "styles.css";
 // ↑削除するとCSSが反映されなくなる
 
 /***** 新規TODO追加機能 *****/
