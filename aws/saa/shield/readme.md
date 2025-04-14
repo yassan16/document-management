@@ -12,6 +12,8 @@ AWS Shieldには、すべてのAWSユーザーが無償で利用できる「AWS 
 ## AWS Shield Advanced
 EC2インスタンス、Elastic Load Balancing、Amazon CloudFrontなどを標的としたDDoS攻撃に対して、高度な保護サービスを利用できる。
 
+* API Gatewayをサポートしていない
+
 ### 例
 * 高度化された大規模な攻撃からの保護
 * DDoS攻撃発生時のモニタリングやレポート

@@ -5,6 +5,7 @@
 * 複数のVPCを1つのハブで相互に接続できる
 * AWS Direct ConnectやAWS VPNで接続されたオンプレミスネットワークとも接続できる
 * Direct Connect Gatewayを併用することで、オンプレミスネットワークとAWSの複数のVPCを効率的に接続することが可能
+* Transit Gateway単体では、異なるリージョンのVPC間を接続することはできない
 
 ## オンプレミスネットワークとAWSの複数のVPCを効率的に接続
 以下に手順を記載する。
