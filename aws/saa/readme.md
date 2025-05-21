@@ -17,12 +17,74 @@
 ## 主要なサービス
 * EC2
 * S3
+  * サブネット
+    * パブリックサブネット
+    * プライベートサブネット
+  * CIDR（Classless Inter-Domain Routing）ブロック
+    * 予約されたIPアドレス
+  * IPアドレスの種類
+    * プライベートIPアドレス
+    * パブリックIPアドレス
+    * Elastic IPアドレス
+  * ルートテーブル
+  * インターネットゲートウェイ
+  * NATゲートウェイ
+    * NAT(Network Address Translation)
+  * NATインスタンス
+  * Egress-Onlyインターネットゲートウェイ
+  * ENI（Elastic Network Interface）
+    * Elastic Fabric Adapter (EFA)
+  * 拡張ネットワーキング（Enhanced Networking）
+  * VPCフローログ
+  * VPCエンドポイント
+    * ゲートウェイ型
+    * AWS PrivateLink（インターフェイス型）
+  * VPCエンドポイントポリシー
+  * VPCでのセキュリティ
+    * セキュリティグループ
+    * ネットワークACL
+  * AWS Network Firewall
+    * ファイアウォール
+    * ファイアウォールポリシー
+    * ルールグループ
+  * VPCの相互接続
+    * VPCピアリング
+    * AWS Transit Gateway
+  * Amazon VPC Lattice
 * VPC
 * IAM
 * ELB/Auto Scaling
 
 ## コンピューティング
-* Lambda/API Gateway
+* Lambda
+  * Lambda関数
+    * 実行行時間
+    * 課金方式
+    * 実行タイミング
+    * Compute Savings Plans
+  * Lambda関数のトリガー
+  * Lambda関数のアクセス権限
+    * デフォルトの権限
+  * VPCアクセス
+    * NATゲートウェイ
+    * VPCエンドポイント
+  * 同時実行
+    * コールドスタート
+    * ウォームスタート
+    * プロビジョニング
+  * 暗号化ヘルパー
+* API Gateway
+  * REST API（RESTful API）
+    * ステートレス
+  * HTTP API
+  * WebSocket API
+  * API キャッシュ
+  * 使用量プラン
+  * VPCリンク
+    * NLB
+  * オーソライザー
+  * 独自ドメイン名の使用
+  * Canaryリリース
 * ECS/Fargate/EKS
 
 ## ストレージ
