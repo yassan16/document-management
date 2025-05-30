@@ -111,7 +111,24 @@
     * クライアント側の暗号化
       * AWS KMS（AWS Key Management Service）に保存されているKMSキーを使用する
       * クライアント側に保存したルートキーを使用する
-* IAM
+* IAM（Identity and Access Management）
+  * ユーザーの種類
+    * AWSアカウント（ルートユーザー）
+    * IAMユーザー
+      * IAMグループ
+    * IAMロール
+      * インスタンスプロファイル
+    * ポリシー
+      * タイプ
+        * IDベースのポリシー
+        * リソースベースのポリシー
+      * 構成要素
+        * Effect：許可または拒否の指定
+        * Action：AWSリソースに対して実行できる操作（例：s3:PutObject）
+        * Resource：Actionの対象とするAWSリソース（例：特定のS3バケット）
+        * Principal：権限のリクエスト元（例：特定のIAMユーザー）
+        * Condition：ポリシーが適用される条件（例：特定のIPアドレス範囲からのアクセス）
+      * Permissions Boundary（アクセス許可境界）
 * ELB/Auto Scaling
 
 ## コンピューティング
