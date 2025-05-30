@@ -16,7 +16,6 @@
 
 ## 主要なサービス
 * EC2
-* S3
   * サブネット
     * パブリックサブネット
     * プライベートサブネット
@@ -52,6 +51,7 @@
     * AWS Transit Gateway
   * Amazon VPC Lattice
 * VPC
+* S3
 * IAM
 * ELB/Auto Scaling
 
