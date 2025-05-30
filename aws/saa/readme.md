@@ -189,7 +189,16 @@
 * ECS/Fargate/EKS
 
 ## ストレージ
-* EBS
+* EBS（Elastic Block Store）
+  * ブロックストレージ
+  * EBSボリューム
+  * アタッチ
+  * EC2インスタンスの内部ストレージ
+  * EBSのボリュームタイプ
+  * DeleteOnTermination（終了時に削除）
+  * スナップショット
+  * 暗号化
+  * RAID（Redundant Arrays of Inexpensive Disks：レイド）
 * EFS
 * Fsx
 * Storage Gateway
