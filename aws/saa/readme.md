@@ -130,6 +130,31 @@
         * Condition：ポリシーが適用される条件（例：特定のIPアドレス範囲からのアクセス）
       * Permissions Boundary（アクセス許可境界）
 * ELB/Auto Scaling
+  * 負荷分散（ロードバランシング）
+  * Elastic Load Balancing（ELB）
+    * ターゲット
+    * ターゲットグループ
+    * 種類
+      * Application Load Balancer（ALB）
+        * 主なルーティング
+          * ホストベース
+          * パスベース
+          * URLクエリ文字列
+        * スティッキーセッション
+      * Network Load Balancer（NLB）
+      * Classic Load Balancer（CLB）
+  * ELBの機能
+    * ELBのヘルスチェック
+    * アクセスログ
+    * ELB自身のスケーリング
+    * リダイレクト
+  * ELB経由の暗号化通信
+    * クライアントとELB間の通信を暗号化する
+      * ELBにサーバー証明書を導入する
+    * クライアントとターゲット間の通信を暗号化する
+      * ELBとターゲットにサーバー証明書を導入する
+      * ターゲットにサーバー証明書を導入する
+  * SNIを利用したELB経由の暗号化通信
 
 ## コンピューティング
 * Lambda
