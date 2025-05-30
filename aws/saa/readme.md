@@ -57,15 +57,60 @@
     3. キーペアの設定
     4. ネットワークの設定
     5. ストレージの設定
-      * Amazon EBS（Elastic Block Store）
-      * インスタンスストア
+        * Amazon EBS（Elastic Block Store）
+        * インスタンスストア
     6. 高度な設定
-      * プレイスメントグループ
-        * クラスタープレイスメントグループ
-        * パーティションプレイスメントグループ
-        * スプレッドプレイスメントグループ
-      * メタデータ
+        * プレイスメントグループ
+          * クラスタープレイスメントグループ
+          * パーティションプレイスメントグループ
+          * スプレッドプレイスメントグループ
+        * メタデータ
 * S3
+  * 構成要素
+    * オブジェクト
+    * バケット
+  * ストレージクラス
+    * S3 Standard
+    * Intelligent-Tiering
+    * 標準-IA：標準-低頻度アクセス （Standard-Infrequent Access）
+    * 1ゾーン-IA：1ゾーン-低頻度アクセス（One Zone-Infrequent Access）
+    * Glacier Instant Retrieval
+    * Glacier Flexible Retrieval
+    * Glacier Deep Archive
+    * ライフサイクルポリシー
+  * 主要な機能
+    * 静的Webサイトホスティング
+    * 署名付きURL
+    * S3イベント通知
+    * リクエスタ支払い
+    * S3 Glacierの復元リクエスト
+      * 標準取り出し
+      * 迅速取り出し
+      * 大容量（バルク）取り出し
+  * データ保護
+    * バージョニング
+    * MFA Delete
+    * オブジェクトロック
+      * リーガルホールド
+      * リテンションモード
+        * ガバナンスモード
+        * コンプライアンスモード
+  * データ転送
+    * S3 Transfer Acceleration
+    * マルチパートアップロード
+    * S3レプリケーション
+  * アクセス制御
+    * バケットポリシー
+    * IAMポリシー（ユーザーポリシー）
+    * ACL（アクセスコントロールリスト）
+  * データ暗号化
+    * サーバー側の暗号化（Server-Side Encryption:SSE）
+      * S3が管理している鍵を使用する (SSE-S3)
+      * AWS KMS（AWS Key Management Service）に保存されているKMSキーを使用する (SSE-KMS)
+      * ユーザーが管理している鍵を使用する (SSE-C)
+    * クライアント側の暗号化
+      * AWS KMS（AWS Key Management Service）に保存されているKMSキーを使用する
+      * クライアント側に保存したルートキーを使用する
 * IAM
 * ELB/Auto Scaling
 
