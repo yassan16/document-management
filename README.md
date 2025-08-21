@@ -5,10 +5,10 @@
 
 ## 目次
 - [agile-development](./agile-development/) : アジャイル開発・スクラムに関する知識
-- [aws](./aws/) : AWSサービス・資格試験・各種ノウハウ
 - [batch](./batch/) : バッチ処理に関する知識
 - [design-architecture](./design-architecture/) : ソフトウェア設計・アーキテクチャ手法
-- [programming](./programming/) : プログラミング言語・技術・コーディング規約
+- [front-backend](./front-backend/) : フロントエンド・バックエンド技術、プログラミング言語、コードリーディング、Git/GitHub運用など
+- [infrastructure](./infrastructure/) : インフラストラクチャ、AWSサービス、運用ノウハウ
 
 各フォルダ内に詳細なドキュメントやサンプルコード、設計資料などを格納しています。
 
