@@ -1,14 +1,15 @@
 # ドキュメント管理
 
 ## 概要
-このリポジトリは、学習・業務で得た知識やノウハウを体系的に整理・蓄積するためのドキュメント集です。AWSやプログラミング、設計手法、アジャイル開発など、幅広い分野の情報をフォルダごとに分類し、再利用や参照がしやすい構成となっています。
+このリポジトリは、学習・業務で得た知識やノウハウを体系的に整理・蓄積するためのドキュメント集です。
 
 ## 目次
-- [agile-development](./agile-development/) : アジャイル開発・スクラムに関する知識
-- [batch](./batch/) : バッチ処理に関する知識
-- [design-architecture](./design-architecture/) : ソフトウェア設計・アーキテクチャ手法
-- [front-backend](./front-backend/) : フロントエンド・バックエンド技術、プログラミング言語、コードリーディング、Git/GitHub運用など
-- [infrastructure](./infrastructure/) : インフラストラクチャ、AWSサービス、運用ノウハウ
+
+- [learning](./learning/) : 学習ロードマップ・ガイド
+- [design](./design/) : 設計ドキュメント（アーキテクチャ、パターン、UML）
+- [tech-reference](./tech-reference/) : 技術リファレンス（言語、フレームワーク、ツール）
+- [methodology](./methodology/) : 開発手法（アジャイル、バッチ処理）
+- [ai](./ai/) : AI関連（Claude、プロンプト、トークン）
+- [misc](./misc/) : その他ツール
 
 各フォルダ内に詳細なドキュメントやサンプルコード、設計資料などを格納しています。
-
