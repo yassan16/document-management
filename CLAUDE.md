@@ -61,5 +61,3 @@
 ## 参照ファイル
 
 - **README.md** - 全体構成・技術スタック
-- **business-rules.md** - ビジネスルール・主要概念
-- **{domain}/index.md** - 各ドメインの詳細
