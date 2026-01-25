@@ -12,6 +12,7 @@
 |---------------|------|------|
 | [Flutter](./flutter/) | Dart | クロスプラットフォームモバイル/Web開発 |
 | [Laravel](./laravel/) | PHP | Webアプリケーション開発 |
+| [Next.js](./nextjs/) | TypeScript/JavaScript | Reactベースフルスタック開発 |
 
 ---
 
@@ -22,8 +23,11 @@ frameworks/
 ├── flutter/           # Flutter関連
 │   ├── environment-setup.md
 │   └── run-app.md
-└── laravel/           # Laravel関連
+├── laravel/           # Laravel関連
+│   ├── README.md
+│   └── authentication/
+│       └── sanctum.md
+└── nextjs/            # Next.js関連
     ├── README.md
-    └── authentication/
-        └── sanctum.md
+    └── roadmap.md
 ```
