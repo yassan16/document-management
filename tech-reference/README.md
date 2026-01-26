@@ -25,6 +25,12 @@
 | [Flutter](./frameworks/flutter/) | Dart | 環境構築、アプリ実行 |
 | [Laravel](./frameworks/laravel/) | PHP | 認証（Sanctum）など |
 
+### ネットワーク (Networking)
+
+| 技術 | 概要 |
+|------|------|
+| [HTTP](./networking/http/) | HTTP通信の学習ロードマップ（基礎〜HTTP/3、WebSocket） |
+
 ### ツール (Tools)
 
 | ツール | 概要 |
@@ -45,7 +51,10 @@ tech-reference/
 │   └── vba/
 ├── frameworks/         # フレームワーク別リファレンス
 │   ├── flutter/
-│   └── laravel/
+│   ├── laravel/
+│   └── nextjs/
+├── networking/         # ネットワーク通信
+│   └── http/
 └── tools/              # ツール別リファレンス
     └── git/
 ```
