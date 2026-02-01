@@ -10,6 +10,7 @@
 
 | フレームワーク | 言語 | 用途 |
 |---------------|------|------|
+| [FastAPI](./fastapi/) | Python | 高速Web API開発 |
 | [Flutter](./flutter/) | Dart | クロスプラットフォームモバイル/Web開発 |
 | [Laravel](./laravel/) | PHP | Webアプリケーション開発 |
 | [Next.js](./nextjs/) | TypeScript/JavaScript | Reactベースフルスタック開発 |
@@ -20,6 +21,8 @@
 
 ```
 frameworks/
+├── fastapi/           # FastAPI関連
+│   └── roadmap.md
 ├── flutter/           # Flutter関連
 │   ├── environment-setup.md
 │   └── run-app.md
