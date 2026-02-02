@@ -14,6 +14,7 @@
 | [Flutter](./flutter/) | Dart | クロスプラットフォームモバイル/Web開発 |
 | [Laravel](./laravel/) | PHP | Webアプリケーション開発 |
 | [Next.js](./nextjs/) | TypeScript/JavaScript | Reactベースフルスタック開発 |
+| [Vue.js](./vuejs/) | TypeScript/JavaScript | プログレッシブUIフレームワーク |
 
 ---
 
@@ -30,7 +31,9 @@ frameworks/
 │   ├── README.md
 │   └── authentication/
 │       └── sanctum.md
-└── nextjs/            # Next.js関連
-    ├── README.md
+├── nextjs/            # Next.js関連
+│   ├── README.md
+│   └── roadmap.md
+└── vuejs/             # Vue.js関連
     └── roadmap.md
 ```
