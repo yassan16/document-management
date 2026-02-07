@@ -12,6 +12,10 @@ LaravelはPHPで最も人気のあるWebアプリケーションフレームワ�
 
 - [Laravel 学習ロードマップ](./roadmap.md) - 基礎から上級まで段階的に学習するためのガイド
 
+### プロジェクト構成
+
+- [プロジェクト構成](./project-structure.md) - フォルダ構成と各ディレクトリの役割
+
 ### 認証 (Authentication)
 
 - [Sanctum](./authentication/sanctum.md) - SPA・モバイル・APIトークン認証
