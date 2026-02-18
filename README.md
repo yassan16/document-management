@@ -5,11 +5,36 @@
 
 ## 目次
 
-- [learning](./learning/) : 学習ロードマップ・ガイド
-- [design](./design/) : 設計ドキュメント（アーキテクチャ、パターン、UML）
-- [tech-reference](./tech-reference/) : 技術リファレンス（言語、フレームワーク、ツール）
-- [methodology](./methodology/) : 開発手法（アジャイル、バッチ処理）
+- [languages](./languages/) : プログラミング言語（Dart、Java、JavaScript、PHP、VBA）
+- [frameworks](./frameworks/) : フレームワーク（FastAPI、Flutter、Laravel、Next.js、Vue.js）
+- [infrastructure](./infrastructure/) : インフラ・ツール（AWS、Git、ネットワーク、youtube-dl）
+- [design](./design/) : 設計（アーキテクチャ、デザインパターン、UML、UI/UX）
+- [methodology](./methodology/) : 開発手法（アジャイル、バッチ処理、API開発、コードリーディング、仕様書駆動開発）
 - [ai](./ai/) : AI関連（Claude、プロンプト、トークン）
-- [misc](./misc/) : その他ツール
+- [tmp](./tmp/) : 作業用（計画書、手順書などの一時ファイル）
+
+## カテゴリの分類方針
+
+### design（設計）と methodology（開発手法）の違い
+
+このリポジトリでは `design/` と `methodology/` を意図的に分離しています。
+一見似ているように見えますが、扱う関心事が異なります。
+
+| 観点 | design（設計） | methodology（開発手法） |
+| --- | --- | --- |
+| **問い** | 何をどう**構造化**するか？ | どう**進める**か？ |
+| **関心事** | システムの構造・見た目・振る舞いの定義 | 開発プロセス・進め方・ワークフロー |
+| **具体例** | アーキテクチャ、デザインパターン、UML、UI/UX | アジャイル、仕様書駆動開発、API開発プロセス、コードリーディング |
+
+#### 具体例で理解する
+
+- 「MVCパターンでコントローラとモデルを分離する」→ **design**（構造の決定）
+- 「仕様書を先に書いてからコードを実装する」→ **methodology**（進め方の決定）
+- 「ERDでテーブル関係を定義する」→ **design**（データ構造の設計）
+- 「スプリント単位でタスクを回す」→ **methodology**（開発の進め方）
+
+#### 迷ったときの判断基準
+
+> **「成果物の形を決める話」なら design、「作り方の手順を決める話」なら methodology** に分類してください。
 
 各フォルダ内に詳細なドキュメントやサンプルコード、設計資料などを格納しています。

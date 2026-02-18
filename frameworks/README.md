@@ -29,8 +29,11 @@ frameworks/
 │   └── run-app.md
 ├── laravel/           # Laravel関連
 │   ├── README.md
-│   └── authentication/
-│       └── sanctum.md
+│   ├── authentication/
+│   │   └── sanctum.md
+│   ├── project-structure.md
+│   ├── roadmap.md
+│   └── serialize-and-accessor.md
 ├── nextjs/            # Next.js関連
 │   ├── README.md
 │   └── roadmap.md
