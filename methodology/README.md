@@ -33,5 +33,8 @@ methodology/
 ├── code-reading/                # コードリーディング
 │   └── roadmap.md               # 学習ロードマップ
 └── spec-driven-development/     # 仕様書駆動開発
-    └── README.md
+    ├── README.md
+    └── 01-requirements/         # 要件定義フェーズ
+        ├── guide.md             # 書き方ガイド
+        └── template.md          # 実用テンプレート
 ```
