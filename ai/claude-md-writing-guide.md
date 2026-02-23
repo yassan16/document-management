@@ -21,13 +21,18 @@ CLAUDE.md は Claude Code の**プロジェクトメモリ**の1つで、各セ�
 
 - [概要](#概要)
 - [3つの重要な構成要素](#3つの重要な構成要素)
+- [書くべき内容 / 書くべきでない内容](#書くべき内容--書くべきでない内容)
 - [クリティカルな制約](#クリティカルな制約)
 - [ベストプラクティス](#ベストプラクティス)
   - [段階的開示（Progressive Disclosure）](#段階的開示progressive-disclosure)
+  - [重要ルールの強調構文](#重要ルールの強調構文)
   - [メモリ機構の活用](#メモリ機構の活用)
+  - [Compactionのカスタマイズ](#compaction圧縮のカスタマイズ)
+  - [Skills との使い分け](#skillsclaudeskillsとの使い分け)
   - [スタイルガイドの扱い](#スタイルガイドの扱い)
   - [自動生成の回避](#自動生成の回避)
 - [アンチパターン](#アンチパターン)
+- [トラブルシューティング](#トラブルシューティング)
 - [テンプレート例](#テンプレート例)
 - [まとめ](#まとめ)
 - [参考](#参考)
@@ -84,6 +89,34 @@ src/
 
 ---
 
+## 書くべき内容 / 書くべきでない内容
+
+公式ベストプラクティスでは、各行について「これを削除したら Claude がミスをするか？」と自問し、Noなら削除すべきとされている。
+
+### 書くべき内容
+
+- Claude が推測できないBashコマンド（ビルド、テスト、リント）
+- デフォルトと**異なる**コードスタイルルール
+- テスト手順・優先テストランナー
+- リポジトリの作法（ブランチ命名、PRルール）
+- プロジェクト固有のアーキテクチャ判断
+- 開発環境の注意点（必要な環境変数など）
+- 非自明な挙動・ハマりどころ
+
+### 書くべきでない内容
+
+- コードを読めばわかること
+- 言語の標準的な慣習（Claude は既に知っている）
+- 詳細なAPIドキュメント（リンクで代替）
+- 頻繁に変わる情報
+- 長い説明やチュートリアル
+- ファイルごとの説明
+- 自明な指示（「きれいなコードを書け」など）
+- シークレット・APIキー（セキュリティリスク）
+- リンターが対応するスタイルルール
+
+---
+
 ## クリティカルな制約
 
 ### 指示数の制限
@@ -117,6 +150,18 @@ src/
 - データベーススキーマ: `docs/database.md` を参照
 - デプロイ手順: `docs/deployment.md` を参照
 ```
+
+### 重要ルールの強調構文
+
+特に守らせたいルールには `IMPORTANT` や `YOU MUST` などの強い表現を使うと遵守率が向上する。
+
+```markdown
+# 重要な規約
+IMPORTANT: テストを書かずにPRを出さないこと
+YOU MUST: すべてのAPIレスポンスで統一エラーフォーマットを使うこと
+```
+
+ただし、すべてのルールを強調すると効果が薄れるため、**本当にクリティカルなルール（3-5個）にのみ**使用する。
 
 ### メモリ機構の活用
 
@@ -190,6 +235,30 @@ Claude が作業中に有用な情報（ビルドコマンド、デバッグの�
 
 詳細は [メモリシステム詳細ガイド](./claude/claude-code-settings/02-memory.md) を参照。
 
+### Compaction（圧縮）のカスタマイズ
+
+Claude Code はコンテキストが長くなると自動的に会話を圧縮する。CLAUDE.md に圧縮時の指示を書くことで、重要な情報が失われることを防げる。
+
+```markdown
+## Compaction指示
+When compacting, always preserve the full list of modified files and any test commands.
+```
+
+また、手動で `/compact <指示>` を実行することも可能。無関係なタスク間では `/clear` でコンテキストをリセットするのも有効。
+
+### Skills（`.claude/skills/`）との使い分け
+
+CLAUDE.md は**毎セッション読み込まれる**ため、普遍的に適用される情報のみを含めるべきである。特定の場面でのみ必要なドメイン知識やワークフローは **Skills** に分離する。
+
+```
+.claude/skills/
+├── SKILL.md           # スキル定義
+├── deploy-guide.md    # デプロイ時のみ必要
+└── migration.md       # DB移行時のみ必要
+```
+
+> **なぜ Skills を使うのか？** CLAUDE.md にすべてを詰め込むと指示が増え、遵守率が下がる。Skills はオンデマンドで読み込まれるため、普段の会話を汚さずに専門知識を提供できる。
+
 ### スタイルガイドの扱い
 
 **「LLMをリンターの役割に使うな」**
@@ -205,6 +274,8 @@ Claude が作業中に有用な情報（ビルドコマンド、デバッグの�
 
 CLAUDE.md は高レバレッジポイントであるため、自動生成より**丁寧な手作業**を推奨する。
 
+ただし、`/init` コマンドで CLAUDE.md の**初期スケルトンを生成**することは有効である。`/init` はプロジェクトの package.json、既存ドキュメント、設定ファイル、コード構造を分析して出発点を作成する。生成後に手作業で精査・編集することが重要。
+
 ---
 
 ## アンチパターン
@@ -216,6 +287,18 @@ CLAUDE.md は高レバレッジポイントであるため、自動生成より*
 | 自動生成への依存 | 品質が担保されない |
 | 1ファイルにすべてを詰め込む | `@import` や `rules/` に分散すべき |
 | 曖昧な説明 | 誤解を招く |
+
+---
+
+## トラブルシューティング
+
+| 症状 | 原因と対処 |
+|------|-----------|
+| Claude がルールを無視する | ファイルが長すぎて指示が埋もれている。削減する |
+| CLAUDE.md に書いた内容を Claude が質問してくる | 記述が曖昧。より明確に書き直す |
+| 時間とともに効果が薄れる | 定期的に棚卸しする。「CLAUDE.md をコードのように扱い、問題が起きたらレビューし、定期的に prune せよ」（公式） |
+
+> CLAUDE.md はGitで管理し、チームで改善を重ねることで価値が**複利的に増加**する。
 
 ---
 
@@ -259,14 +342,21 @@ CLAUDE.md は高レバレッジポイントであるため、自動生成より*
 
 1. **簡潔に保つ**: 300行未満、理想は60行以下
 2. **WHAT/WHY/HOW を明確に**: 技術スタック、目的、実行方法を含める
-3. **メモリ機構を使い分ける**: `@import`・`rules/`・`CLAUDE.local.md`・Auto Memory を活用して CLAUDE.md を軽量化
-4. **ツールを活用**: スタイリングはリンター/フォーマッターに任せる
-5. **手作業で丁寧に**: 自動生成に頼らない
+3. **書くべき/書くべきでないを意識する**: 各行が「削除したらClaudeがミスするか」のテストに合格するもののみ残す
+4. **メモリ機構を使い分ける**: `@import`・`rules/`・`CLAUDE.local.md`・Auto Memory・Skills を活用して CLAUDE.md を軽量化
+5. **重要ルールは強調する**: `IMPORTANT` / `YOU MUST` を厳選して使う
+6. **ツールを活用**: スタイリングはリンター/フォーマッターに任せる
+7. **手作業で丁寧に**: `/init` で出発点を作り、手作業で磨き上げる
+8. **定期的に棚卸しする**: CLAUDE.md をコードのように管理し、prune する
 
 ---
 
 ## 参考
 
 - [Writing a Good CLAUDE.md - HumanLayer](https://www.humanlayer.dev/blog/writing-a-good-claude-md)
-- [Memory - Claude Code 公式ドキュメント](https://docs.anthropic.com/ja/claude-code/memory)
+- [Memory - Claude Code 公式ドキュメント](https://code.claude.com/docs/en/memory)
+- [Best Practices - Claude Code 公式ドキュメント](https://code.claude.com/docs/en/best-practices)
+- [Using CLAUDE.MD files | Anthropic公式ブログ](https://claude.com/blog/using-claude-md-files)
+- [Skills - Claude Code 公式ドキュメント](https://code.claude.com/docs/en/skills)
+- [How Anthropic teams use Claude Code | Anthropic公式ブログ](https://claude.com/blog/how-anthropic-teams-use-claude-code)
 - [メモリシステム詳細ガイド（本リポジトリ）](./claude/claude-code-settings/02-memory.md)
