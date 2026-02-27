@@ -10,7 +10,7 @@
 - [infrastructure](./infrastructure/) : インフラ・ツール（AWS、Git、ネットワーク、youtube-dl）
 - [design](./design/) : 設計（アーキテクチャ、デザインパターン、UML、UI/UX）
 - [methodology](./methodology/) : 開発手法（アジャイル、バッチ処理、API開発、コードリーディング、仕様書駆動開発）
-- [ai](./ai/) : AI関連（Claude、プロンプト、トークン）
+- [ai](./ai/) : AI関連（Claude、コンテキストエンジニアリング、プロンプト、トークン）
 - [tmp](./tmp/) : 作業用（計画書、手順書などの一時ファイル）
 
 ## カテゴリの分類方針
