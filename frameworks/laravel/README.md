@@ -20,6 +20,10 @@ LaravelはPHPで最も人気のあるWebアプリケーションフレームワ�
 
 - [プロジェクト構成](./project-structure.md) - フォルダ構成と各ディレクトリの役割
 
+### データベース管理
+
+- [データベース管理 完全ガイド](./database-management.md) - マイグレーション・シーダー・Eloquent・トランザクション・本番デプロイ戦略（Laravel 12.x ベース）
+
 ### 認証 (Authentication)
 
 - [Sanctum](./authentication/sanctum.md) - SPA・モバイル・APIトークン認証
@@ -32,5 +36,5 @@ LaravelはPHPで最も人気のあるWebアプリケーションフレームワ�
 |---------|---------|
 | 認証 | Passport（OAuth2）、Fortify、Breeze |
 | HTTP | Middleware、Request/Response |
-| データベース | Eloquent、Query Builder、Migration |
+| データベース | ~~Eloquent、Query Builder、Migration~~ → [作成済み](./database-management.md) |
 | テスト | Feature Test、Unit Test |
