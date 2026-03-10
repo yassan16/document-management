@@ -11,6 +11,7 @@
 | カテゴリ | 内容 |
 |---------|------|
 | [Architecture](./architecture/) | ドメイン駆動設計（DDD）、オニオンアーキテクチャ |
+| [Data Modeling](./data-modeling/) | データモデリング（概念・論理・物理モデル、正規化、スタースキーマ、Data Vault） |
 | [Patterns](./patterns/) | デザインパターン（将来用） |
 | [UML](./uml/) | シーケンス図 |
 | [UI/UX](./ui-ux/) | UI/UXデザイン学習ロードマップ |
@@ -24,6 +25,8 @@ design/
 ├── architecture/                  # アーキテクチャ設計
 │   ├── domain-driven-design/      # ドメイン駆動設計
 │   └── onion-architecture/        # オニオンアーキテクチャ
+├── data-modeling/                 # データモデリング
+│   └── data-modeling.md           # データモデリング総合ガイド
 ├── patterns/                      # デザインパターン（将来用）
 ├── ui-ux/                         # UI/UXデザイン
 │   └── roadmap.md                 # 学習ロードマップ
