@@ -12,7 +12,7 @@
 |---------|------|
 | [AWS](./aws/) | AWSインフラ学習ロードマップ |
 | [Git](./git/) | 命名規則、ロードマップ、Xcode連携 |
-| [Networking](./networking/) | HTTP通信、ネットワーク基礎 |
+| [Networking](./networking/) | HTTP通信、ネットワーク基礎、Web公開の基礎知識 |
 | [youtube-dl](./youtube-dl/) | youtube-dl CLIツール |
 
 ---
@@ -29,7 +29,8 @@ infrastructure/
 │   └── xcode/         # Xcode連携
 ├── networking/        # ネットワーク関連
 │   ├── README.md
-│   └── http/          # HTTP通信
+│   ├── http/          # HTTP通信
+│   └── web-publishing/ # Web公開の基礎知識
 └── youtube-dl/        # youtube-dl CLIツール
     └── README.md
 ```

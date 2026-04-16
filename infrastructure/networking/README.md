@@ -14,14 +14,22 @@
 |-----------|------|
 | [HTTP](./http/) | HTTP通信の学習ロードマップ（基礎〜HTTP/3、WebSocket） |
 
+### Web公開
+
+| ドキュメント | 概要 |
+|------------|------|
+| [Webサイト公開の基礎知識](./web-publishing/basics.md) | レジストラ・ドメイン・DNS・ホスティング・SSL/TLS・CDN・デプロイ |
+
 ---
 
 ## ディレクトリ構造
 
 ```
 networking/
-└── http/               # HTTP通信関連
-    └── roadmap.md      # HTTP学習ロードマップ
+├── http/                    # HTTP通信関連
+│   └── roadmap.md           # HTTP学習ロードマップ
+└── web-publishing/          # Web公開に必要な基礎知識
+    └── basics.md            # レジストラ、DNS、ホスティング等の解説
 ```
 
 ---
@@ -29,6 +37,4 @@ networking/
 ## 今後追加予定
 
 - TCP/IP基礎
-- DNS
-- TLS/SSL
 - WebRTC
