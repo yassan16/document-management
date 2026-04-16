@@ -19,6 +19,7 @@
 | ドキュメント | 概要 |
 |------------|------|
 | [Webサイト公開の基礎知識](./web-publishing/basics.md) | レジストラ・ドメイン・DNS・ホスティング・SSL/TLS・CDN・デプロイ |
+| [ドメイン移管・レジストラ変更](./web-publishing/domain-transfer.md) | ドメイン移管の仕組み・手順・DNS変更やホスティング変更との違い |
 
 ---
 
@@ -29,7 +30,8 @@ networking/
 ├── http/                    # HTTP通信関連
 │   └── roadmap.md           # HTTP学習ロードマップ
 └── web-publishing/          # Web公開に必要な基礎知識
-    └── basics.md            # レジストラ、DNS、ホスティング等の解説
+    ├── basics.md            # レジストラ、DNS、ホスティング等の解説
+    └── domain-transfer.md   # ドメイン移管・レジストラ変更の解説
 ```
 
 ---

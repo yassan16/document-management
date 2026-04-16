@@ -434,3 +434,6 @@ dig example.com TXT
 | 15 | Incremental Static Regeneration (ISR) - Vercel | https://vercel.com/docs/incremental-static-regeneration |
 | 16 | Introduction to the server side - MDN | https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Server-side/First_steps/Introduction |
 | 17 | Projects overview - Vercel | https://vercel.com/docs/projects |
+| 18 | Transfer domain out from Cloudflare - Cloudflare Docs | https://developers.cloudflare.com/registrar/account-options/transfer-out-from-cloudflare/ |
+| 19 | How do I transfer my domain to Vercel? - Vercel | https://vercel.com/kb/guide/how-do-i-transfer-my-domain-to-vercel |
+| 20 | Transfer Policy - ICANN | https://www.icann.org/en/contracted-parties/accredited-registrars/resources/domain-name-transfers/policy |
