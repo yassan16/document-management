@@ -5,14 +5,14 @@
 
 ## 目次
 
-- [languages](./languages/) : プログラミング言語（Dart、Java、JavaScript、PHP、VBA）
-- [frameworks](./frameworks/) : フレームワーク（FastAPI、Flutter、Laravel、Next.js、Vue.js）
-- [infrastructure](./infrastructure/) : インフラ・ツール（AWS、Git、ネットワーク、youtube-dl）
-- [design](./design/) : 設計（アーキテクチャ、デザインパターン、UML、UI/UX）
-- [methodology](./methodology/) : 開発手法（アジャイル、バッチ処理、API開発、コードリーディング、仕様書駆動開発）
-- [devops](./devops/) : DevOps（CI/CD、IaC、コンテナ化、モニタリング、GitOps、DORA メトリクス）
-- [ai](./ai/) : AI関連（Claude、MCP、コンテキストエンジニアリング、プロンプト、トークン）
-- [tmp](./tmp/) : 作業用（計画書、手順書などの一時ファイル）
+- [プログラム言語](./プログラム言語/) : プログラミング言語（Dart、Java、JavaScript、PHP、VBA）
+- [フレームワーク](./フレームワーク/) : フレームワーク（FastAPI、Flutter、Laravel、Next.js、Vue.js）
+- [インフラ](./インフラ/) : インフラ・ツール（AWS、Git、ネットワーク、youtube-dl）
+- [設計](./設計/) : 設計（アーキテクチャ、デザインパターン、UML、UI/UX）
+- [開発手法](./開発手法/) : 開発手法（アジャイル、バッチ処理、API開発、コードリーディング、仕様書駆動開発）
+- [DevOps](./DevOps/) : DevOps（CI/CD、IaC、コンテナ化、モニタリング、GitOps、DORA メトリクス）
+- [AI](./AI/) : AI関連（Claude、MCP、コンテキストエンジニアリング、プロンプト、トークン）
+- [一時フォルダ](./一時フォルダ/) : 作業用（計画書、手順書などの一時ファイル）
 
 ## カテゴリの分類方針
 
