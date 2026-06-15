@@ -5,7 +5,6 @@
 
 ## 目次
 
-- [プログラム言語](./プログラム言語/) : プログラミング言語（Dart、Java、JavaScript、PHP、VBA）
 - [フレームワーク](./フレームワーク/) : フレームワーク（FastAPI、Flutter、Laravel、Next.js、Vue.js）
 - [インフラ](./インフラ/) : インフラ・ツール（AWS、Git、ネットワーク、youtube-dl）
 - [設計](./設計/) : 設計（アーキテクチャ、デザインパターン、UML、UI/UX）
