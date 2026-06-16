@@ -1001,7 +1001,7 @@ Closes #123
 
 ## スクリーンショット
 <!-- UIの変更がある場合 -->
-![ログイン画面](screenshot.png)
+ログイン画面のスクリーンショットを添付する
 
 ## テスト方法
 1. `.env.local`に`GOOGLE_CLIENT_ID`と`GOOGLE_CLIENT_SECRET`を設定

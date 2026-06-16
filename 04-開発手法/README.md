@@ -22,7 +22,7 @@
 ## ディレクトリ構造
 
 ```
-methodology/
+04-開発手法/
 ├── agile/                       # アジャイル開発
 │   ├── scrum-knowledge.md       # スクラム知識
 │   ├── scrum-preparation.md     # スクラム準備

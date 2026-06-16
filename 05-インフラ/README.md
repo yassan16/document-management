@@ -21,7 +21,7 @@
 ## ディレクトリ構造
 
 ```
-infrastructure/
+05-インフラ/
 ├── aws/               # AWS関連
 │   └── roadmap.md     # インフラ学習ロードマップ
 ├── docker/            # Docker関連

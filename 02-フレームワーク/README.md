@@ -21,7 +21,7 @@
 ## ディレクトリ構造
 
 ```
-frameworks/
+02-フレームワーク/
 ├── fastapi/           # FastAPI関連
 │   └── roadmap.md
 ├── flutter/           # Flutter関連
