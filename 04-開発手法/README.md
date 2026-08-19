@@ -14,8 +14,8 @@
 | [API Development](./api-development/) | API開発ロードマップ |
 | [Batch](./batch/) | バッチ処理設計（中間データ） |
 | [Code Reading](./code-reading/) | コードリーディング学習ロードマップ |
-| [Spec Driven Development](./spec-driven-development/) | 仕様書駆動開発 |
-| [Test Driven Development](./test-driven-development/) | テスト駆動開発 |
+| [仕様書駆動開発](./仕様書駆動開発/概要.md) | 仕様書駆動開発 |
+| [テスト駆動開発](./テスト駆動開発/概要.md) | テスト駆動開発 |
 | [要件定義](./要件定義/要件定義の進め方.md) | 一般的な要件定義の進め方 |
 
 ---
@@ -34,13 +34,19 @@
 │   └── transitional-data.md     # 中間データ設計
 ├── code-reading/                # コードリーディング
 │   └── roadmap.md               # 学習ロードマップ
-├── spec-driven-development/     # 仕様書駆動開発
-│   ├── README.md
-│   └── 01-requirements/         # 要件定義フェーズ
-│       ├── guide.md             # 書き方ガイド
-│       └── template.md          # 実用テンプレート
-├── test-driven-development/     # テスト駆動開発
-│   └── README.md                # TDD概要・実践ガイド
+├── 仕様書駆動開発/
+│   ├── 概要.md
+│   ├── 01-要件定義/
+│   │   ├── ガイド.md
+│   │   └── テンプレート.md
+│   ├── 02-設計/
+│   │   ├── ガイド.md
+│   │   └── テンプレート.md
+│   └── 03-タスク分割/
+│       ├── ガイド.md
+│       └── テンプレート.md
+├── テスト駆動開発/
+│   └── 概要.md                  # TDD概要・実践ガイド
 └── 要件定義/                     # 要件定義
     └── 要件定義の進め方.md       # 一般的な要件定義の進め方
 ```
