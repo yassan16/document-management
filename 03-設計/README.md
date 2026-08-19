@@ -30,8 +30,6 @@
 ├── データモデリング/                # データモデリング
 │   └── data-modeling.md           # データモデリング総合ガイド
 ├── パターン/                        # デザインパターン（将来用）
-├── UI・UX/                          # UI/UXデザイン
-│   └── roadmap.md                 # 学習ロードマップ
-└── UML/                           # UML図
-    └── sequence-diagrams.md       # シーケンス図
+└── UI・UX/                          # UI/UXデザイン
+    └── roadmap.md                 # 学習ロードマップ
 ```
