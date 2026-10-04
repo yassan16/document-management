@@ -17,6 +17,7 @@
 | [パターン](./パターン/) | デザインパターン（将来用） |
 | [UML](./UML/) | シーケンス図 |
 | [API Development](./api-development/) | API開発学習ロードマップ |
+| [Webアプリケーション](./web-application/) | Webアプリ × ネットワーク学習ロードマップ（ブラウザからサーバーまでを1本の通信として学ぶ） |
 | [UI・UX](./UI・UX/) | UI/UXデザイン学習ロードマップ |
 
 ---
@@ -42,6 +43,8 @@
 ├── パターン/                        # デザインパターン（将来用）
 ├── api-development/                 # API開発
 │   └── roadmap.md                 # 学習ロードマップ
+├── web-application/                 # Webアプリケーション
+│   └── roadmap.md                 # Webアプリ × ネットワーク学習ロードマップ
 └── UI・UX/                          # UI/UXデザイン
     └── roadmap.md                 # 学習ロードマップ
 ```
