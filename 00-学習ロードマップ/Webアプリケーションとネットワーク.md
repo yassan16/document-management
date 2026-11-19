@@ -901,8 +901,8 @@ kubectl logs
 
 | 分野 | ドキュメント |
 |---|---|
-| HTTP | [HTTP ロードマップ](../05-インフラ/networking/http/roadmap.md) |
-| AWS | [AWS ロードマップ](../05-インフラ/aws/roadmap.md) |
+| HTTP | [HTTP ロードマップ](../05-基盤・インフラ/networking/http/roadmap.md) |
+| AWS | [AWS ロードマップ](../05-基盤・インフラ/aws/roadmap.md) |
 | API | [API開発 ロードマップ](./API開発.md) |
 | フロントエンド | [Next.js ロードマップ](../02-フレームワーク/nextjs/roadmap.md) |
 | DB | [DBインデックスとB-tree](../03-設計/データ設計/DBインデックスとB-tree.md) |
