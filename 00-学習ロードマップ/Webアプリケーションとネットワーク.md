@@ -901,12 +901,12 @@ kubectl logs
 
 | 分野 | ドキュメント |
 |---|---|
-| HTTP | [HTTP ロードマップ](../../05-インフラ/networking/http/roadmap.md) |
-| AWS | [AWS ロードマップ](../../05-インフラ/aws/roadmap.md) |
-| API | [API開発 ロードマップ](../api-development/roadmap.md) |
-| フロントエンド | [Next.js ロードマップ](../../02-フレームワーク/nextjs/roadmap.md) |
-| DB | [DBインデックスとB-tree](../db/index-B_tree.md) |
-| DevOps | [DevOps](../../06-DevOps/README.md) |
+| HTTP | [HTTP ロードマップ](../05-インフラ/networking/http/roadmap.md) |
+| AWS | [AWS ロードマップ](../05-インフラ/aws/roadmap.md) |
+| API | [API開発 ロードマップ](./API開発.md) |
+| フロントエンド | [Next.js ロードマップ](../02-フレームワーク/nextjs/roadmap.md) |
+| DB | [DBインデックスとB-tree](../03-設計/データ設計/DBインデックスとB-tree.md) |
+| DevOps | [DevOps](../06-DevOps/README.md) |
 
 ---
 
